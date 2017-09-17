@@ -26,3 +26,25 @@ do
 	unzip $file
 done
 
+for file in *.fasta
+do
+	echo "Output for $file:"
+	echo " "
+	echo "Size: `ls -lh $file | cut -c 44-47`"
+	echo " "
+	echo "First three lines:"
+	echo "----------"
+	head -n 3 $file
+	echo " "
+	echo "Last three lines:"
+	echo "----------"
+	tail -n 3 $file
+	echo " "
+	echo "Number of sequences: `grep -c "^>" $file`"
+	echo " "
+	echo "Sequence names (sorted):"
+	echo "`grep "^>" $file`"
+	echo " "
+	echo "###############################"
+	echo " "
+done
