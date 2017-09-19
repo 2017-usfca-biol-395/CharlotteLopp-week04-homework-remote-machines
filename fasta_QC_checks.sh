@@ -7,11 +7,15 @@
 
 echo " "
 
-echo "Output from preliminary quality control checks on selected fasta files `$date`"
+echo "Output from preliminary quality control checks on selected fasta files"
+
+echo "`date "+%Y-%m-%d %R"`"
 
 echo " "
 
-echo "Output for each fasta includes : Filename, file size, first three lines, last three lines, the number of sequences in the file, and the sequence identifier lines, sorted alphabetically."
+echo "Output for each fasta includes:"
+
+echo "Filename, file size, first three lines, last three lines, the number of sequences in the file, and the sequence identifier lines, sorted alphabetically."
 
 echo " "
 
